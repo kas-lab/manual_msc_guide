@@ -2,8 +2,10 @@
 
 \usepackage[style=apa]{biblatex}
 \addbibresource{report.bib}
-
+\usepackage{hyperref}
 \usepackage{changes}
+
+
 \begin{document}
 
 %% Use Roman numerals for the page numbers of the title pages and table of
@@ -42,9 +44,10 @@
     \textbf{Authors:} \\
     Carlos Hernandez Corbato
     \vfill
-    Date 2022-12-22
+    \today
 }
 \setpagecolor{tudelft-cyan}
+
 \makecover[split]
 
 
@@ -60,12 +63,18 @@
 
 \input{introduction}
 
+\input{workflow_tools}
+
 \input{literature}
 
-%% Use letters for the chapter numbers of the appendices.
-\appendix
+\input{master_thesis}
 
-%\input{appendix-a}
+\input{data_management}
+
+%% Use letters for the chapter numbers of the appendices.
+% \appendix
+
+% \input{appendix-a}
 
 \printbibliography
 
